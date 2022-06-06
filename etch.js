@@ -26,6 +26,7 @@ function changeDimensions() {
   result = prompt("Enter a number to change the dimensions. Both dimensions will be the same. The number cannot be higher than 100");
   if (result > 100) {
     alert("You can't input a number that is higher than 100. Try again.")
+    return;
   }
   removeGrid();
   currentGrid = createGrid(result);
